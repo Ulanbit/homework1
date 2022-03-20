@@ -24,9 +24,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HomeFragment extends Fragment{
-    private Adapter adapter = new Adapter(getContext());
+    private Adapter adapter = new Adapter();
     private NavController controller;
     private FragmentHomeBinding binding;
+    private List<HomeViewModel> list = new ArrayList<>();
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -34,6 +35,10 @@ public class HomeFragment extends Fragment{
         controller = Navigation.findNavController(view);
         initList();
     }
+
+
+
+
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 
