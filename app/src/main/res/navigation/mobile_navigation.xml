@@ -27,4 +27,9 @@
         android:name="profile.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/add"
+        android:name="com.example.lesson1.ui.home.Add"
+        android:label="Add"
+        tools:layout="@layout/fragment_add" />
 </navigation>
